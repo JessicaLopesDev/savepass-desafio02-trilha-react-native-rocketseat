@@ -42,7 +42,6 @@ export function RegisterLoginData() {
   });
 
   async function handleRegister(formData: FormData) {
-
     const newLoginData = {
       id: String(uuid.v4()),
       service_name: formData.service_name,
@@ -68,8 +67,6 @@ export function RegisterLoginData() {
       console.log(error);
       Alert.alert('Não foi possível salvar');
     }
-
-    // Save data on AsyncStorage and navigate to 'Home' screen
   }
 
   return (
